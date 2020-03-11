@@ -4,9 +4,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## A note about the structure and test approach
 
-All essential game logic is contained in the `useGameState` stateful hook. In addition, the sequence of elements that are shown during an "Attack" cycle is controlled via the `useAnimationState` stateful hook. The unit tests of these hooks ensure that the core logic is met.
+Most of the logic lives in the following files:
 
-Separately, the `Game` component consumes the state of these hooks to display UI elements. Snapshot testing is used to prevent regressions. While I would ordinarily prefer a more expressive form of assertion in UI tests, the scope of the probem and the remit of the exercise encouraged me to to use this simpler approach. In a real life scenario this would be trading development convenience in the present over test maintainability which requires more careful consideration.
+- `useGameState.js` implements all essential game logic via a reducer pattern
+- `useAnimationState.js` implements the sequence of elements that become visible during an "attack" sequence
+- `Game.js` is the top-level component that will display components according to the game and attack animation states
+
+
+The logic of the game is tested via unit tests on the hooks, and presentational concerns are regression-protected by snapshot tests on the `Game` component.
+
+Most real-life situations call for more explicit assertions, as they are easier to read and maintain than snapshots, but for the purpose of this excercise, snapshots are "good enough".
 
 ## Start
 
@@ -15,7 +22,7 @@ npm install
 npm start
 ```
 
-and open [http://localhost:3000].
+and open [localhost:3000](http://localhost:3000).
 
 ## Test
 
