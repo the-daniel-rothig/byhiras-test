@@ -1,0 +1,159 @@
+:root {
+  --red-text: #7d0c0c;
+  --green-text: #4b6b06;
+}
+
+.character {
+  position: absolute;
+  bottom: 40%;
+}
+
+.character.left {
+  left: 10%;
+}
+
+.character.right {
+  right: 10%;
+}
+
+.character__sprite {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  animation: hopping 800ms ease-in infinite;
+}
+
+.right .character__sprite {
+  animation-delay: 200ms;
+}
+
+.character__sprite--dead {
+  animation: dropOff 1s linear;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.lifebar {
+  display: flex;
+}
+
+.lifebar__text {
+  margin-left: 10px;
+}
+
+.lifebar__outer {
+  width: 100px;
+  height: 10px;
+  border: solid black 1px;
+  padding: 2px;
+}
+
+.lifebar__inner {
+  background-color: red;
+  width: 100px;
+  height: 10px;
+  transform-origin: 0%;
+  transition: transform 200ms;
+}
+
+
+.swords, .dice {
+  font-size: 5em;
+  position: absolute;
+  top: 30%;
+  animation: pop 200ms linear;
+}
+
+.swords { 
+  left: 50%;
+  translate: -50%;
+}
+
+.dice {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.7;
+}
+
+.dice.left{
+  left:40%;
+  color: var(--green-text);
+}
+
+.dice.right { 
+  right: 40%;
+  color: var(--red-text);
+}
+
+.dice.dice--inline {
+  display: inline-block;
+  font-size: 2em;
+  line-height: 0.5;
+  position:relative;
+  top: 10px;
+  left: 0;
+  right: 0;
+  animation:none;
+}
+
+.die {
+  animation: pop 200ms linear;
+}
+
+.attackButton, .gameMessage {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  translate: -50% 0;
+
+  font-size: 1.5em;
+  color: #523c02;
+  border: solid 4px #9e7609;
+  border-radius: 10px;
+  background-color: #dbc179;
+  padding: 0.5em 2em;
+}
+
+.attackButton {
+  background-color:#b5953f;
+  font-size: 2em;
+}
+
+.gameMessage {
+  bottom:25%;
+  animation: pop 200ms linear;
+}
+
+.gameMessage__good {
+  font-size: 3em; 
+  font-weight: bold;
+  color: var(--green-text)
+}
+
+.gameMessage__bad {
+  font-size: 3em; 
+  font-weight: bold;
+  color: var(--red-text);
+}
+
+@keyframes pop {
+  0% { scale: 0 }
+  50% { scale: 1.2}
+  100% { scale: 1 }
+}
+
+@keyframes dropOff {
+  0% { translate: 0 0; color: black}
+  30% { translate: 0 -30px; color: red}
+  100% { translate: 0 200px; }
+}
+
+@keyframes hopping {
+  0% { translate: -5px 0 }
+  35% { translate: 0 -5px }
+  50% { translate: 5px 0 }
+  85% { translate: 0 -5px }
+  100% { translate: -5px 0 }
+}

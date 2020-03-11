@@ -1,0 +1,747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game renders a Game Over correctly 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        0
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite character__sprite--dead"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        50
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <span
+    class="gameMessage gameMessage__bad"
+  >
+    Game Over
+  </span>
+</div>
+`;
+
+exports[`Game renders a You Won correctly 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        0
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite character__sprite--dead"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <span
+    class="gameMessage gameMessage__good"
+  >
+    You Win
+  </span>
+</div>
+`;
+
+exports[`Game renders correctly on animation start 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        51
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Game renders correctly when the damage shows 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        50
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <span
+    aria-label="swords clash!"
+    class="swords"
+    role="img"
+  >
+    ⚔️
+  </span>
+  <div
+    class="dice left"
+  >
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+    <span
+      aria-label="die of value 2"
+      class="die"
+      role="img"
+    >
+      ⚁
+    </span>
+  </div>
+  <div
+    class="dice right"
+  >
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+  </div>
+  <span
+    class="gameMessage"
+  >
+    
+    You've dealt
+     
+    <div
+      class="dice dice--inline left"
+    >
+      <span
+        aria-label="die of value 1"
+        class="die"
+        role="img"
+      >
+        ⚀
+      </span>
+      <span
+        aria-label="die of value 2"
+        class="die"
+        role="img"
+      >
+        ⚁
+      </span>
+    </div>
+     
+    -
+     
+    <div
+      class="dice dice--inline right"
+    >
+      <span
+        aria-label="die of value 1"
+        class="die"
+        role="img"
+      >
+        ⚀
+      </span>
+      <span
+        aria-label="die of value 1"
+        class="die"
+        role="img"
+      >
+        ⚀
+      </span>
+    </div>
+     
+    = 
+    1
+     damage.
+  </span>
+</div>
+`;
+
+exports[`Game renders correctly when the dice show 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        51
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <span
+    aria-label="swords clash!"
+    class="swords"
+    role="img"
+  >
+    ⚔️
+  </span>
+  <div
+    class="dice left"
+  >
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+    <span
+      aria-label="die of value 2"
+      class="die"
+      role="img"
+    >
+      ⚁
+    </span>
+  </div>
+  <div
+    class="dice right"
+  >
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+    <span
+      aria-label="die of value 1"
+      class="die"
+      role="img"
+    >
+      ⚀
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Game renders correctly when the swords show 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        51
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <span
+    aria-label="swords clash!"
+    class="swords"
+    role="img"
+  >
+    ⚔️
+  </span>
+</div>
+`;
+
+exports[`Game renders the initial state 1`] = `
+<div>
+  <div
+    class="character left"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        100
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="our hero"
+          role="img"
+        >
+          
+|_O       
+  |\`-)--- 
+  |\\      
+/  |
+  
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div
+    class="character right"
+  >
+    <div
+      class="lifebar"
+    >
+      <div
+        class="lifebar__outer"
+      >
+        <div
+          class="lifebar__inner"
+          style="transform: scaleX(NaN);"
+        />
+      </div>
+      <div
+        class="lifebar__text"
+      >
+        50
+         HP
+      </div>
+    </div>
+    <div
+      class="character__sprite"
+    >
+      <div>
+        <pre
+          aria-label="a monster"
+          role="img"
+        >
+          
+oo\`'._..---.___..-
+(_,-.        ,..'\`
+    \`'.    ;
+        : :\`
+      _;_; 
+
+        </pre>
+      </div>
+    </div>
+  </div>
+  <button
+    class="attackButton"
+  >
+    Attack!
+  </button>
+</div>
+`;
